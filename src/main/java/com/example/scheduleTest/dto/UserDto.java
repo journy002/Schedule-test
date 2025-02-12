@@ -9,6 +9,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@NotBlank
 public class UserDto {
 
 
@@ -19,4 +20,8 @@ public class UserDto {
     @NotBlank(message = "이메일은 필수 입력 값입니다.")
     @Email(message = "올바른 이메일 형식이 아닙니다.")
     private String email;
+
+    @NotBlank
+    @Size(min = 8, max = 20)
+    private String password;
 }

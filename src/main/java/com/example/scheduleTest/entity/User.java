@@ -1,6 +1,8 @@
 package com.example.scheduleTest.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -30,10 +32,15 @@ public class User {
     @LastModifiedDate
     private LocalDateTime updateAt;
 
+    @NotBlank
+    @Size(min = 8, max = 20)
+    private String password;
+
     @Builder
-    public User(String username, String email) {
+    public User(String username, String email, String password) {
         this.username = username;
         this.email = email;
+        this.password = password;
     }
 
 }
