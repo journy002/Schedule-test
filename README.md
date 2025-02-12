@@ -9,22 +9,13 @@ API 명세서 구성
 
 패키지 경로
 
-├── controller
-│   ├── ScheduleController.java
-│   ├── UserController.java
-├── dto
-│   ├── ScheduleDto.java
-│   ├── UserDto.java
-├── entity
-│   ├── Schedule.java
-│   ├── User.java
-├── repository
-│   ├── ScheduleRepository.java
-│   ├── UserRepository.java
-├── service
-│   ├── ScheduleService.java
-│   ├── UserService.java
-├── ScheduleTestApplication.java
+ - controller: [ScheduleController.java, UserController.java]
+ - dto: [ScheduleDto.java, UserDto.java]
+ - entity: [Schedule.java, User.java]
+ - repository: [ScheduleRepository.java, UserRepository.java]
+ - service: [ScheduleService.java, UserService.java]
+ - config: [JapConfig]
+ - ScheduleTestApplication.java
 
 
 ## ✨ API 명세서
