@@ -24,7 +24,7 @@ API 명세서 구성
 ├── service
 │   ├── ScheduleService.java
 │   ├── UserService.java
-├── ScheduleApplication.java
+├── ScheduleTestApplication.java
 
 
 ## ✨ API 명세서
